@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(240, 242, 245);
+    width: 100%;
+    height: 100%;
+}
+
+nav .top-nav-bar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+
+nav .top-nav-bar .site-logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(24, 119, 242);
+}
+
+nav .top-nav-bar .site-search-box {
+    background-color: rgb(240, 242, 245);
+    padding: 2px 5px;
+    border: 2px solid rgb(240, 242, 245);
+    border-radius: 50px;
+}
+
+nav .top-nav-bar .site-search-box #search-btn {
+    border: 0;
+    font-size: 1rem;
+    padding: 5px 5px;
+    color: rgb(101, 103, 107);
+}
+
+nav .top-nav-bar .site-search-box #search-box {
+    border: 0;
+    font-size: 1rem;
+    padding: 2px 5px;
+    margin: 5px 10px;
+    width: 50vw;
+    background-color: rgb(240, 242, 245);
+    outline: none;
+}
+
+nav .top-nav-bar .top-icons {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 -20px;
+}
+
+nav .top-nav-bar .top-icons i {
+    padding: 10px 10px;
+    background-color: rgb(240, 242, 245);
+    border-radius: 40px;
+    color: black;
+    margin: 0 4px;
+}
+
+nav .top-nav-bar .top-icons .profile {
+    margin: 3px 7px 0px 3px;
+}
+
+nav .top-nav-bar .top-icons .profile a img {
+    border-radius: 50px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid rgb(196, 193, 193);
+}
+
+.left-sidebar-nav {
+    width: 24vw;
+    height: 90vh;
+    margin: 50px 0 0 0;
+    background-color: rgb(240, 242, 245);
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.left-sidebar-nav div {
+    margin: 2px 2px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.left-sidebar-nav div img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+}
+
+.left-sidebar-nav div a {
+    color: black;
+    font-weight: bolder;
+}
+
+.left-sidebar-nav .active {
+    border-left: 10px solid blue;
+}
+
+.left-sidebar-nav div:hover {
+    background-color: white;
+}
+
+.left-sidebar-nav1 {
+    width: 4rem;
+    height: 90vh;
+    background-color: white;
+    position: fixed;
+    margin: 50px 0 0 0;
+    display: none;
+    overflow-y: scroll;
+}
+
+.left-sidebar-nav1 div {
+    margin: 2px 0;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.left-sidebar-nav1 .active {
+    border-left: 10px solid blue;
+}
+
+.left-sidebar-nav1 div:hover {
+    background-color: rgba(169, 169, 169, 0.308);
+}
+
+.left-sidebar-nav1 div a i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.left-sidebar-nav1 div a img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+}
+
+.right-sidebar-nav {
+    position: fixed;
+    right: 0;
+    width: 22vw;
+    height: 90vh;
+    margin: 50px 0;
+    background-color: rgb(240, 242, 245);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.right-sidebar-nav h3 {
+    padding: 10px 10px;
+}
+
+.right-sidebar-nav div {
+    margin: 2px 0;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+}
+
+.right-sidebar-nav div span img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin: 6px 0 0 0;
+}
+
+.right-sidebar-nav div span .f2 {
+    display: block;
+    margin: 0 0 0 70px;
+}
+
+.right-sidebar-nav div span .f {
+    margin: 0 19px 0 -12px;
+}
+
+.right-sidebar-nav div span .f2 .f .btns {
+    margin: 0 4px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0;
+    border: 1px solid darkgray;
+}
+
+.right-sidebar-nav div span .f .b1 {
+    background-color: rgb(27, 116, 228);
+    color: white;
+    border: 0;
+}
+
+.right-sidebar-nav .active,
+.right-sidebar-nav div:hover {
+    background-color: white;
+}
+
+.right-sidebar-nav div a {
+    color: black;
+    font-weight: bolder;
+}
+
+.right-sidebar-nav div img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+}
+
+main {
+    position: absolute;
+    left: 26vw;
+    top: 70px;
+    width: 50vw;
+}
+
+main section .first-sec-main .f-sec-top {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+main section .first-sec-main {
+    background-color: white;
+    border-radius: 10px;
+}
+
+main section .first-sec-main .f-sec-top button {
+    width: 30vw;
+    margin: 0 3px;
+    height: 3rem;
+    border: 0;
+    background-color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    margin: 3px 0;
+}
+
+main section .first-sec-main .f-sec-top .active {
+    color: rgb(24, 118, 241);
+    border-bottom: 3px solid rgb(24, 118, 241);
+}
+
+main section .first-sec-main .f-sec-top button:hover {
+    background-color: rgba(169, 169, 169, 0.137);
+}
+
+/* story section  */
+#stories-sec {
+    display: block;
+}
+
+#stories-sec .stories-sec {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#stories-sec .stories-sec div {
+    height: 15rem;
+    background-color: white;
+    width: 8rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px darkgray;
+    margin: 17px 6px;
+
+}
+
+#stories-sec .stories-sec .create-story i {
+    position: sticky;
+    bottom: 45px;
+    left: 3.2rem;
+    background-color: rgb(24, 118, 242);
+    color: white;
+    border: 5px solid white;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+#stories-sec .stories-sec .create-story img {
+    width: 8rem;
+    height: 12rem;
+    border-radius: 10px;
+}
+
+#stories-sec .stories-sec .create-story p {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -2rem;
+}
+
+#stories-sec .stories-sec a .p1 {
+    background-image: url(imgs/man-1839500_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p3 {
+    background-image: url(imgs/blog9.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p2 {
+    background-image: url(imgs/e\ commerac2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p4 {
+    background-image: url(imgs/mug-3403963_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p6 {
+    background-image: url(imgs/website-design-46707.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p5 {
+    background-image: url(imgs/parsonal1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p7 {
+    background-image: url(imgs/website-designer-working.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p8 {
+    background-image: url(imgs/website-design-48829.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .p9 {
+    background-image: url(imgs/responsive1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stories-sec .stories-sec a .p10 {
+    background-image: url(imgs/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stories-sec .stories-sec a .p11 {
+    background-image: url(imgs/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stories-sec .stories-sec a .p12 {
+    background-image: url(imgs/adult-18945_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stories-sec .stories-sec a .p13 {
+    background-image: url(imgs/bags-2851637_640.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stories-sec .stories-sec a .p14 {
+    background-image: url(imgs/beautiful-people-3954533_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stories-sec .stories-sec a .parson img {
+    width: 33px;
+    height: 33px;
+    border: 5px solid rgb(24, 118, 242);
+    border-radius: 50px;
+    margin: 15px 0 0 15px;
+}
+
+#stories-sec .stories-sec a .parson p {
+    position: relative;
+    top: 150px;
+    left: 10px;
+    color: white;
+}
+
+/* reels section  */
+#reels-sec {
+    display: none;
+}
+
+#reels-sec .reels-sec {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#reels-sec .reels-sec div {
+    height: 15rem;
+    width: 8rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px darkgray;
+    margin: 17px 6px;
+}
+
+#reels-sec .reels-sec .create-reels {
+    background: linear-gradient(45deg, rgb(238, 225, 37), rgb(199, 212, 7));
+}
+
+#reels-sec .reels-sec .create-reels i {
+    margin: 80px 35px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 220, 22);
+    padding: 15px 15px;
+    border-radius: 50px;
+    font-size: 2rem;
+}
+
+#reels-sec .reels-sec .create-reels p {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    margin: -10px 0 10px 0;
+}
+
+#reels-sec .reels-sec a .p1 {
+    background-image: url(imgs/website-design-48829.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p2 {
+    background-image: url(imgs/e\ commerac2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p3 {
+    background-image: url(imgs/parsonal1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p4 {
+    background-image: url(imgs/website-designer-working.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p5 {
+    background-image: url(imgs/website-design-48829.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p6 {
+    background-image: url(imgs/mug-3403963_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p7 {
+    background-image: url(imgs/website-design-46707.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p8 {
+    background-image: url(imgs/parsonal1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p9 {
+    background-image: url(imgs/man-1839500_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .p10 {
+    background-image: url(imgs/responsive1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reels-sec .reels-sec a .p11 {
+    background-image: url(imgs/beautiful-people-3954533_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reels-sec .reels-sec a .p12 {
+    background-image: url(imgs/bags-2851637_640.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reels-sec .reels-sec a .parson p {
+    padding: 210px 10px;
+    color: rgb(0, 0, 0);
+}
+
+main section .second-sec-main {
+    margin: 20px 0;
+    background-color: white;
+    height: 7.5rem;
+    border-radius: 10px;
+}
+
+main section .second-sec-main .profile-search {
+    display: flex;
+    align-items: center;
+}
+
+main section .second-sec-main .profile-search img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin: 10px 10px;
+}
+
+main section .second-sec-main .profile-search input {
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    border: 0;
+    background-color: rgb(240, 242, 245);
+    border-radius: 30px;
+    width: 40vw;
+}
+
+main section .second-sec-main .upload-files {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 5px 0;
+}
+
+main section .second-sec-main .upload-files button {
+    height: 2.7rem;
+    width: 10rem;
+    border: 0;
+    background-color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+main section .second-sec-main .upload-files button i {
+    color: darkorange;
+}
+
+main section .second-sec-main .upload-files button:hover {
+    background-color: rgba(169, 169, 169, 0.212);
+}
+
+main section .third-section-post {
+    background-color: white;
+    border-radius: 10px;
+}
+
+main section .third-section-post .top-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+main section .third-section-post .top-flex div {
+    display: flex;
+    align-items: center;
+}
+
+main section .third-section-post .top-flex div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0 0 0;
+}
+
+main section .third-section-post .top-flex div p {
+    padding: 15px 0 0 10px;
+    font-weight: bold;
+}
+
+main section .third-section-post .top-flex div i {
+    margin: 15px 15px 0 0;
+    font-size: 1.2rem;
+}
+
+main section .third-section-post img {
+    width: 50vw;
+}
+
+main section .third-section-post video {
+    width: 50vw;
+}
+
+main section .third-section-post .flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 15px;
+}
+
+main section .third-section-post .flex1 span i {
+    background-color: blue;
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: white;
+}
+
+main section .third-section-post .flex1 .flex2 {
+    display: flex;
+    align-items: center;
+}
+
+main section .third-section-post .flex1 .flex2 nav {
+    margin: 0 10px;
+}
+
+main section .third-section-post .liks-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+main section .third-section-post .comment {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+main section .third-section-post .comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+main section .third-section-post .comment input {
+    width: 40vw;
+    height: 1.3rem;
+    padding: 5px 10px;
+    margin: 0 15px;
+    border: 0;
+    border-radius: 30px;
+    background-color: rgb(240, 242, 245);
+}
+
+/* upload-files */
+#upload{
+    position:fixed;
+    /* top: 2rem; */
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 500;
+    margin: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+/* #upload-sec{
+    top: 0;
+    left: 0;
+} */
+#upload .upload-section {
+    background-color: white; 
+    width: 35rem;
+    height: 30rem;
+    /* width: 100vw; */
+    border: 1px solid darkgray;
+}
+#upload .upload-section .top-flexes{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+#upload .upload-section .upl-profile{
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+}
+#upload .upload-section .upl-profile span img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+#upload .upload-section .upl-profile span p{
+    padding: 0 10px;
+}
+#upload .upload-section .upl-profile span select{
+    margin: 4px 10px;
+    width: 8rem;
+    border-radius: 10px;
+}
+#upload .upload-section input{
+    margin: 10px 15px;
+    width: 35vw;
+    height: 1.6rem;
+    padding: 3px 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color:rgb(240,242,245) ;
+}
+#upload .upload-section .upload-pic-vi{
+    border: 2px solid black;
+    margin: 10px 20px;
+    height: 17rem;
+}
+#upload .upload-section .upload-pic-vi img{
+    width: auto;
+    height: 11rem;
+    margin-left: 7rem;
+    /* top: -3rem; */
+    position: relative;
+
+}
+#upload .upload-section .upload-pic-vi i{
+    margin: 10px 30rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* #upload .upload-section .add{
+    /* margin: 3rem 0; */
+/* } */
+#upload .upload-section .add label i{
+    margin: 0 15rem;
+    font-size: 1.5rem;
+}
+#upload .upload-section .upload-pic-vi button{
+   margin: .5rem 0 0 4rem;
+   height: 2rem;
+   width: 25rem;
+}
